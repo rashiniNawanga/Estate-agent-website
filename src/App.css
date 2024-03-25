@@ -1,0 +1,289 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+.landingpage {
+  min-height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  background-image: url("assets/realestate.jpeg");
+  background-size: cover;
+  background-position: center center;
+  padding: 15px;
+}
+
+.landingpage form {
+  width: 100%;
+  max-width: 800px;
+}
+
+.landingpage form legend {
+  font-size: 60px;
+  line-height: 1;
+  color: #fff;
+  margin-bottom: 60px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.landingpage form .formsearch {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+border-radius: 15px;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+
+.landingpage form .formsearch .fieldinput .icon-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.landingpage form .formsearch .fieldinput .icon-wrap svg {
+  fill: #555;
+  width: 14px;
+  height: 14px;
+}
+
+  form .formsearch .fieldinput input,  form .formsearch select{
+  height: 60px;
+  background: #fff;
+  border: 0;
+  display: block;
+    border-radius: 30px;
+  width: 100%;
+  padding: 10px 12px 10px 45px;
+  font-size: 16px;
+  color: #555;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+
+.landingpage form .formsearch .fieldinput input.placeholder {
+  color: #9a9a9a;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.landingpage form .formsearch .fieldinput input:-moz-placeholder {
+  color: #9a9a9a;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.landingpage form .formsearch .fieldinput input::-webkit-input-placeholder {
+  color: #9a9a9a;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.landingpage form .formsearch .fieldinput input:hover, .landingpage form .formsearch .fieldinput input:focus {
+  box-shadow: none;
+  outline: 0;
+}
+
+.landingpage form .formsearch .fieldinput.firstwrapper {
+  -ms-flex-positive: 1;
+  margin-bottom:15px;
+  flex-grow: 1;
+}
+
+.landingpage form .formsearch .fieldinput.fifth-wrap .btn-search {
+  height: 60px;
+  width: 100%;
+  background: #30a0d7;
+  white-space: nowrap;
+  border-radius: 30px;
+  font-size: 20px;
+  color: #fff;
+  transition: all .2s ease-out, color .2s ease-out;
+  border: 0;
+  cursor: pointer;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+
+.landingpage form .formsearch .fieldinput.fifth-wrap .btn-search:hover {
+  background: #026998;
+}
+
+@media screen and (max-width: 992px) {
+  .landingpage form legend {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .landingpage form .formsearch {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+  .landingpage form .formsearch .fieldinput {
+    margin-bottom: 15px;
+  }
+  .landingpage form .formsearch .fieldinput.firstwrapper {
+    width: 100%;
+    max-width: 100% !important;
+  }
+  .landingpage form .formsearch .fieldinput.second-wrap {
+    width: calc(50% - 7.5px);
+    max-width: none;
+  }
+  .landingpage form .formsearch .fieldinput.third-wrap {
+    width: calc(50% - 7.5px);
+    max-width: none;
+  }
+  .landingpage form .formsearch .fieldinput.fouth-wrap {
+    width: calc(50% - 7.5px);
+    max-width: none;
+    margin-bottom: 0;
+  }
+  .landingpage form .formsearch .fieldinput.fifth-wrap {
+    width: calc(50% - 7.5px);
+    max-width: none;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .landingpage form legend {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  .landingpage form .formsearch .fieldinput.second-wrap, .landingpage form .formsearch .fieldinput.third-wrap, .landingpage form .formsearch .fieldinput.fouth-wrap, .landingpage form .formsearch .fieldinput.fifth-wrap {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .landingpage form .formsearch .fieldinput.fifth-wrap {
+    margin-bottom: 0;
+  }
+}
+
+
+.calendardate input{
+  text-transform: capitalize;
+}
+.card{
+  border-radius:20px
+}
+.card-img-top{
+  height:220px;
+  object-fit: cover;
+}
+.card-body .card-text{
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.titleproperty{
+  margin: auto;
+  width: 80%;
+  margin-bottom: 25px;
+
+}
+.favtextcard{
+  display: -webkit-box;
+  -webkit-line-clamp: 2!important;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+}
+
+.thumbimage {
+  height: 500px;
+  float: left;
+  width: 100%;
+  margin-bottom: 35px;
+  overflow: hidden;
+}
+.thumbimage .mySwiper2{
+  height: 75%;
+}
+.thumbimage .mySwiper{
+  height: 25%;
+}
+
+.thumbimage img {
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+.property-thumb-imgs {
+  float: left;
+  width: 100%;
+  border:1px solid #dfe0e5;
+  border-top: 0;
+  padding: 34px 38px 34px 37px;
+}
+
+body{
+  background: #ddf0f6;
+}
